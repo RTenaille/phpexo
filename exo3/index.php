@@ -10,9 +10,9 @@
     <?php
     $plat = 50;
     $portion = 3;
+    $nombrePartEntier = floor($plat / $portion);
     $nombrePartModulo = $plat % $portion;
-    $nombrePartEntier = $plat / $portion;
-    echo 'Il y a '.($nombrePartEntier).' parts exactes et '.($nombrePartModulo).' parts ENORMES';
+    echo 'Il y a '.($nombrePartEntier).' parts exactes et il reste'.($nombrePartModulo);
 
 
     

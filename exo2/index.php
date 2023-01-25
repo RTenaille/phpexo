@@ -1,3 +1,13 @@
+<?php
+$dureeEnSeconde = 6700;
+$nombreHeures = floor($dureeEnSeconde/3600);
+$dureeEnSeconde -= $nombreHeures*3600;
+
+$nombreMinutes = floor($dureeEnSeconde/60);
+$dureeEnSeconde -= $nombreMinutes*60;
+$message =$nombreHeures."H".$nombreMinutes."M".$dureeEnSeconde."S";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +17,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $duree = 6700;
-    $minute = $duree % 60;
-    $heure = ($duree - $minute) / 60;
-    echo 'La durée de 6700 secondes représente'.($heure).'heure et '.($minute).'minutes';
-
-    ?>
+<?=$nombreHeures?>HH
+<?=$nombreMinutes?>MM
+    <?=$dureeEnSeconde?>SS
+<script>alert("<?=$message?>");</script>
 </body>
 </html>
