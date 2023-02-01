@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*********************************GENERAL********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ /***font-family: 'Roboto', sans-serif;***/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+ /***font-family: 'Oswald', sans-serif;***/
+
+:root{
+  --mainpolice : 'Roboto', sans-serif;
+  --decorativepolice : 'Oswald', sans-serif;;
+
+  --darkred : #680e18;
+  --red : #a00819;
+  --white : #e8dadc;
+  --black : #0e0808;
+  --yellow : #f9b00b;
+  --darkgrey : #201616;
+  --grey : #443b3a;
+}
+
+/***********************************BODY*********************************************/
+body{
+  font-family: var(--mainpolice);
+  color: var(--yellow);
+  background: linear-gradient(70deg, var(--black), var(--darkgrey));
+}
+p{
+  color: var(--white);
+  text-align: justify;
+}
+.buttonHub{
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--darkred);
+  color: var(--white);
+  font-size: 1.5em;
+  padding: 0.5em;
+  box-shadow: 5px 5px 5px var(--black);
+}
+.buttonHub:hover{
+  color: var(--yellow);
+}
+h1{
+  margin-bottom: 3%;
+  font-family: var(--decorativepolice);
+  font-size: 3em;
+}
+h2{
+  margin-bottom: 2%;
+  font-family: var(--decorativepolice);
+}
+/************************************HEADER******************************************/
+.banniereHub{
+  background-image: url(images/banniere.png);
+  background-color: #a00819;
+  background-repeat: no-repeat;
+  width: 18vw;
+  height: 18vh;
+  margin-bottom: 3%;
+}
+.bodyHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.navBanniere{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navBanniere ul{
+  display: flex;
+
+}
+.navBanniere ul li{
+  list-style: none;
+}
+/**************************************MAIN******************************************/
+.bodyMain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+article{
+  margin-bottom: 5%;
+  padding: 5%;
+  background: linear-gradient(70deg, var(--darkred), var(--red));
+  border-radius: 1% 5%;
+  box-shadow: 10px 10px 1px var(--black);
+
+}
+
+aside{
+  display: flex;
+  justify-content: end;
+  padding-top: 2%;
+}
+
+
+/*****************************************ARTICLE-FORUM******************************/
+/******************************************ARTICLE-SHADOW-PRICKER********************/
+/*******************************************ARTICLE-BIBLIOTHEQUE*********************/
+
+.carteRecit{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: var(--grey);
+    color: var(--yellow);
+}
+
+/********************************************ARTICLE-SHADOW-CAMP*********************/
+/*********************************************FOOTER*********************************/
+
+/**************************RESPONSIVE*********************************************/
+@media (width < 400px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+}
+/*********************************GENERAL********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ /***font-family: 'Roboto', sans-serif;***/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+ /***font-family: 'Oswald', sans-serif;***/
+
+:root{
+  --mainpolice : 'Roboto', sans-serif;
+  --decorativepolice : 'Oswald', sans-serif;;
+
+  --darkred : #680e18;
+  --red : #a00819;
+  --white : #e8dadc;
+  --black : #0e0808;
+  --yellow : #f9b00b;
+  --darkgrey : #201616;
+  --grey : #443b3a;
+}
+
+/***********************************BODY*********************************************/
+body{
+  font-family: var(--mainpolice);
+  color: var(--yellow);
+  background: linear-gradient(70deg, var(--black), var(--darkgrey));
+}
+p{
+  color: var(--white);
+  text-align: justify;
+}
+.buttonHub{
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--darkred);
+  font-size: 1em;
+  color: var(--white);
+  padding: 0.2em;
+  box-shadow: 5px 5px 5px var(--black);
+}
+.buttonHub:hover{
+  color: var(--yellow);
+}
+h1{
+  font-family: var(--decorativepolice);
+  font-size: 1.9em;
+}
+h2{
+  margin-bottom: 2%;
+  font-family: var(--decorativepolice);
+}
+/************************************HEADER******************************************/
+.banniereHub{
+  background-image: url(images/banniere.png);
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 20vh;
+  margin-bottom: 3%;
+}
+.bodyHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.navBanniere{
+  width: 90%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.navBanniere ul{
+  display: flex;
+  flex-direction: column;
+}
+.navBanniere ul li{
+  list-style: none;
+}
+/**************************************MAIN******************************************/
+.bodyMain{
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+article{
+  margin-bottom: 5%;
+  padding: 5%;
+  background: linear-gradient(70deg, var(--darkred), var(--red));
+  border-radius: 1% 5%;
+  box-shadow: 10px 10px 1px var(--black);
+
+}
+
+aside{
+  display: flex;
+  justify-content: end;
+  padding-top: 2%;
+}
+
+
+/*****************************************ARTICLE-FORUM******************************/
+/******************************************ARTICLE-SHADOW-PRICKER********************/
+/*******************************************ARTICLE-BIBLIOTHEQUE*********************/
+/********************************************ARTICLE-SHADOW-CAMP*********************/
+/*********************************************FOOTER*********************************/
+  
+}

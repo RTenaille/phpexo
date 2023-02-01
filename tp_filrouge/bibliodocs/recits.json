@@ -1,0 +1,23 @@
+{
+    "recits": [
+        {
+            "titreRecit" : "La foire à la Saucisse",
+            "descriptionRecit" : "La première foire à la saucisse depuis l'effondrement de la bourse tourne mal, et pourrait bien provoquer la chute de l'Empire.",
+            "illustrationRecit" : "ceci est une image",
+            "texteRecit" : "Elementum pulvinar etiam non quam lacus. Non arcu risus quis varius quam quisque. Ultricies mi eget mauris pharetra et ultrices neque. Lorem donec massa sapien faucibus et molestie ac feugiat. Vel pretium lectus quam id leo in. Id aliquet risus feugiat in ante metus. Tellus pellentesque eu tincidunt tortor aliquam nulla. Id diam maecenas ultricies mi eget mauris pharetra et. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur."
+        },
+        {
+            "titreRecit" : "Le Retour de la Saucisse",
+            "descriptionRecit" : "Juno Brosé a réussi de justesse à ramener la paix sociale il y a une décennie, et est trop vieux pour ces conneries. Mais cette année, encore une fois, la Foire à la Saucisse s'organise. Qui sait ce qu'il pourrait se passer.",
+            "illustrationRecit" : "ceci est une image",
+            "texteRecit" : "Elementum pulvinar etiam non quam lacus. Non arcu risus quis varius quam quisque. Ultricies mi eget mauris pharetra et ultrices neque. Lorem donec massa sapien faucibus et molestie ac feugiat. Vel pretium lectus quam id leo in. Id aliquet risus feugiat in ante metus. Tellus pellentesque eu tincidunt tortor aliquam nulla. Id diam maecenas ultricies mi eget mauris pharetra et. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur."
+        },
+        {
+            "titreRecit" : "La Foire à l'Echalotte",
+            "descriptionRecit" : "Juno Brosé Junior ayant réussi à vaincre les organisateurs de la Foire à la Saucisse, cherche cette fois à contrecarrer les plans du Maître de l'Echalotte",
+            "illustrationRecit" : "ceci est une image",
+            "texteRecit" : "Elementum pulvinar etiam non quam lacus. Non arcu risus quis varius quam quisque. Ultricies mi eget mauris pharetra et ultrices neque. Lorem donec massa sapien faucibus et molestie ac feugiat. Vel pretium lectus quam id leo in. Id aliquet risus feugiat in ante metus. Tellus pellentesque eu tincidunt tortor aliquam nulla. Id diam maecenas ultricies mi eget mauris pharetra et. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur."
+        }
+
+    ]
+}
