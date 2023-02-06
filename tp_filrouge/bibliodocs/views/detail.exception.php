@@ -1,0 +1,1 @@
+<aside> ERREUR: <?=$reponse->getException()->getMessage()?></aside>
