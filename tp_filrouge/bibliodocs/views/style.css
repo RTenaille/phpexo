@@ -38,6 +38,7 @@ p{
   color: var(--white);
   font-size: 1.5em;
   padding: 0.5em;
+  margin: 0.5% 1.5% 0.5% 1.5%;
   box-shadow: 5px 5px 5px var(--black);
 }
 .buttonHub:hover{
@@ -55,7 +56,7 @@ h2{
 /************************************HEADER******************************************/
 .banniereHub{
   background-image: url(images/banniere.png);
-  background-color: #a00819;
+  background-color: var(--red);
   background-repeat: no-repeat;
   width: 18vw;
   height: 18vh;

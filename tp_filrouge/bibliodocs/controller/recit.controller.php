@@ -1,5 +1,5 @@
 <?php
-    function afficherRecit(){
+    function afficherLesRecits(){
         ob_start();
         // $json = file_get_contents("recits.json");
         // $recitsJson = json_decode($json);
@@ -13,18 +13,22 @@
         $reponse = RecitDB::lister();
         if($reponse->isSuccessfull()){
             $listeRecits = $reponse->getData();
+            if($listeRecits){
                 foreach($listeRecits as $recit){
                     include 'views/card.recit.php';
                 }
-            } else {
-                include 'views/detail.exception.php';
-            }
+                } else {
+                    include 'views/recit.nontrouve.php';
+                }
+                } else {
+                    include "views/detail.exception.php";
+                }
             $contenu = ob_get_clean();
             include 'views/layout.php';
         
     }
 
-    function afficherDetailRecit($pIdentifiantRecit){
+    function afficherUnRecit($pIdentifiantRecit){
         // ob_start();
         // $json = file_get_contents("recits.json");
         // $recitsJson = json_decode($json);
@@ -33,14 +37,19 @@
         // $contenu = ob_get_clean();
         ob_start();
         $reponse = RecitDB::lire($pIdentifiantRecit);
-        $recit = $reponse->getData();
-        if($recit){
-        include 'views/detail.recit.php';
-        } else {
-            include 'views/recitIntrouvable.php';
-        }
+        if($reponse->isSuccessfull()){
+            if($reponse->isDataFound()){
+                $recit = $reponse->getData()[0];
+                include "views/detail.recit.php";
+            }else{
+                include "views/recitIntrouvable.php";
+            }}else{
+                include "views/detail.exception.php";
+            }
+        
+        
         $contenu = ob_get_clean();
         include "views/layout.php";
-}
+        }
 
 ?>
